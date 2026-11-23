@@ -1,0 +1,64 @@
+{
+  "notice": "Evaluación de anomalías sintéticas; no confirma fraudes ni generaliza a banca real.",
+  "reference_rows": 240,
+  "fit_rows": 180,
+  "calibration_rows": 60,
+  "test_rows": 30,
+  "labeled_rows": 30,
+  "unlabeled_rows": 0,
+  "positive_labels": 10,
+  "fit_end": "2026-06-29T12:00:00+00:00",
+  "calibration_start": "2026-06-30T12:00:00+00:00",
+  "reference_end": "2026-08-28T12:00:00+00:00",
+  "test_start": "2027-01-01T12:00:00+00:00",
+  "seed": 42,
+  "library_versions": {
+    "python": "3.12.10",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "joblib": "1.6.0"
+  },
+  "anomaly_threshold": 99,
+  "baseline_threshold_cents": 10937.09,
+  "matrix_order": "[[TN, FP], [FN, TP]]; clase positiva=atípico sintético",
+  "ranking_score": "Isolation Forest: -score_samples; línea base: amount_cents",
+  "isolation_forest": {
+    "precision": 1.0,
+    "recall": 0.1,
+    "f1": 0.18181818181818182,
+    "roc_auc": 0.915,
+    "average_precision": 0.8326340326340326,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        9,
+        1
+      ]
+    ]
+  },
+  "amount_baseline": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "roc_auc": 1.0,
+    "average_precision": 1.0,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        0,
+        10
+      ]
+    ]
+  },
+  "input_sha256": {
+    "reference": "1db4781b351dfe7b09d9ae206cfaa2a0649938cff87180c84e515065b84d4178",
+    "test": "45c9ef8c43f8ba2151645c00213ed1e39495463b6265b6e071df291bb41f8dcf"
+  }
+}

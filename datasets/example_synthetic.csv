@@ -1,0 +1,3 @@
+transaction_id,amount,timestamp,account_id,label
+demo-001,125.50,2026-11-12T10:00:00-06:00,synthetic-01,0
+demo-002,9800.00,2026-11-12T03:15:00-06:00,synthetic-02,1

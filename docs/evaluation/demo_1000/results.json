@@ -1,0 +1,119 @@
+{
+  "notice": "Evaluación de anomalías sintéticas; no confirma fraudes ni generaliza a banca real.",
+  "reference_rows": 709,
+  "fit_rows": 531,
+  "calibration_rows": 178,
+  "test_rows": 291,
+  "labeled_rows": 291,
+  "unlabeled_rows": 0,
+  "positive_labels": 27,
+  "fit_end": "2026-09-15T20:14:02+00:00",
+  "calibration_start": "2026-09-15T20:15:09+00:00",
+  "reference_end": "2026-10-02T23:36:03+00:00",
+  "test_start": "2026-10-03T10:41:05+00:00",
+  "seed": 42,
+  "library_versions": {
+    "python": "3.12.10",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "joblib": "1.6.0"
+  },
+  "anomaly_threshold": 99,
+  "baseline_threshold_cents": 439453.10000000265,
+  "matrix_order": "[[TN, FP], [FN, TP]]; clase positiva=atípico sintético",
+  "ranking_score": "Isolation Forest: -score_samples; línea base: amount_cents",
+  "isolation_forest": {
+    "precision": 1.0,
+    "recall": 0.2222222222222222,
+    "f1": 0.36363636363636365,
+    "roc_auc": 0.8129910213243547,
+    "average_precision": 0.570057968067938,
+    "confusion_matrix": [
+      [
+        264,
+        0
+      ],
+      [
+        21,
+        6
+      ]
+    ]
+  },
+  "amount_baseline": {
+    "precision": 1.0,
+    "recall": 0.1111111111111111,
+    "f1": 0.2,
+    "roc_auc": 0.7662738496071829,
+    "average_precision": 0.4822321319666622,
+    "confusion_matrix": [
+      [
+        264,
+        0
+      ],
+      [
+        24,
+        3
+      ]
+    ]
+  },
+  "dataset_sha256": "b43cdf84a260712fb811883e0a4755b066a897fe1f7afddd18546f666f2fca84",
+  "generator_seed": 42,
+  "split_cutoff": "2026-10-03T00:00:00-06:00",
+  "false_positive_ids": [],
+  "false_negative_ids": [
+    "FG-DEMO-000181",
+    "FG-DEMO-000236",
+    "FG-DEMO-000532",
+    "FG-DEMO-000298",
+    "FG-DEMO-000768",
+    "FG-DEMO-000982",
+    "FG-DEMO-000802",
+    "FG-DEMO-000648",
+    "FG-DEMO-000955",
+    "FG-DEMO-000476",
+    "FG-DEMO-000523",
+    "FG-DEMO-000238",
+    "FG-DEMO-000984",
+    "FG-DEMO-000675",
+    "FG-DEMO-000699",
+    "FG-DEMO-000262",
+    "FG-DEMO-000493",
+    "FG-DEMO-000873",
+    "FG-DEMO-000741",
+    "FG-DEMO-000875",
+    "FG-DEMO-000357"
+  ],
+  "per_family": {
+    "cambio_patron": {
+      "rows": 5,
+      "flagged": 0,
+      "reference_positive": 5
+    },
+    "combinada": {
+      "rows": 7,
+      "flagged": 4,
+      "reference_positive": 7
+    },
+    "horario_inusual": {
+      "rows": 3,
+      "flagged": 2,
+      "reference_positive": 3
+    },
+    "monto_alto": {
+      "rows": 7,
+      "flagged": 0,
+      "reference_positive": 7
+    },
+    "normal": {
+      "rows": 264,
+      "flagged": 0,
+      "reference_positive": 0
+    },
+    "rafaga": {
+      "rows": 5,
+      "flagged": 0,
+      "reference_positive": 5
+    }
+  }
+}

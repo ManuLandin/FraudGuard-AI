@@ -1,0 +1,22 @@
+transaction_id,amount_cents,timestamp,account_id,reference_is_anomaly,transaction_type,merchant_category,location,anomaly_kind,raw_anomaly_score,anomaly_score,risk_level,predicted_is_anomaly,error_type
+FG-DEMO-000181,25152,2026-10-03T10:41:05Z,usuario_demo_18,1,retiro,papeleria,Zona Norte Ficticia,combinada,0.6318056956421416,98.31460674157303,medio,False,FN
+FG-DEMO-000236,41081,2026-10-06T06:43:03Z,usuario_demo_05,1,compra,mantenimiento,Zona Oriente Ficticia,horario_inusual,0.5981492268260025,94.38202247191012,bajo,False,FN
+FG-DEMO-000532,382099,2026-10-10T21:58:36Z,usuario_demo_08,1,compra,equipo_oficina,Zona Sur Ficticia,monto_alto,0.5852832374844408,93.25842696629213,bajo,False,FN
+FG-DEMO-000298,240459,2026-10-12T20:36:07Z,usuario_demo_03,1,compra,equipo_oficina,Zona Norte Ficticia,monto_alto,0.5570000393216578,89.88764044943821,bajo,False,FN
+FG-DEMO-000768,60753,2026-10-13T10:20:17Z,usuario_demo_08,1,transferencia,transporte,Zona Centro Ficticia,combinada,0.5835610867258229,92.69662921348315,bajo,False,FN
+FG-DEMO-000982,40020,2026-10-20T01:51:42Z,usuario_demo_08,1,retiro,servicios,Zona Oriente Ficticia,cambio_patron,0.5521180374246101,87.64044943820225,bajo,False,FN
+FG-DEMO-000802,61629,2026-10-22T15:07:07Z,usuario_demo_17,1,retiro,abarrotes,Zona Centro Ficticia,cambio_patron,0.49699793301040307,57.86516853932584,bajo,False,FN
+FG-DEMO-000648,170600,2026-10-22T19:19:53Z,usuario_demo_18,1,pago,insumos_cafeteria,Zona Centro Ficticia,monto_alto,0.543541754076862,83.70786516853933,bajo,False,FN
+FG-DEMO-000955,46621,2026-10-27T14:42:38Z,usuario_demo_12,1,compra,transporte,Zona Sur Ficticia,rafaga,0.4977922106161374,57.86516853932584,bajo,False,FN
+FG-DEMO-000476,48181,2026-10-27T14:43:02Z,usuario_demo_12,1,compra,mantenimiento,Zona Norte Ficticia,rafaga,0.49917233642984066,58.98876404494382,bajo,False,FN
+FG-DEMO-000523,39836,2026-10-27T14:43:24Z,usuario_demo_12,1,compra,transporte,Zona Norte Ficticia,rafaga,0.5001104721696088,60.1123595505618,bajo,False,FN
+FG-DEMO-000238,109500,2026-10-27T14:44:23Z,usuario_demo_12,1,compra,transporte,Zona Norte Ficticia,rafaga,0.5302311068081008,78.08988764044943,bajo,False,FN
+FG-DEMO-000984,57662,2026-10-27T14:44:52Z,usuario_demo_12,1,compra,transporte,Zona Norte Ficticia,rafaga,0.5006453634147079,60.674157303370784,bajo,False,FN
+FG-DEMO-000675,167985,2026-10-27T18:35:19Z,usuario_demo_10,1,compra,transporte,Zona Centro Ficticia,monto_alto,0.5190816282831965,74.15730337078652,bajo,False,FN
+FG-DEMO-000699,51362,2026-10-28T00:44:37Z,usuario_demo_14,1,transferencia,abarrotes,Zona Centro Ficticia,cambio_patron,0.5164603130942456,71.34831460674157,bajo,False,FN
+FG-DEMO-000262,40532,2026-10-28T10:46:08Z,usuario_demo_18,1,retiro,abarrotes,Zona Norte Ficticia,combinada,0.5870642403331822,93.82022471910112,bajo,False,FN
+FG-DEMO-000493,695623,2026-10-28T21:00:11Z,usuario_demo_16,1,transferencia,transporte,Zona Sur Ficticia,monto_alto,0.5818121209899422,92.69662921348315,bajo,False,FN
+FG-DEMO-000873,52156,2026-10-28T21:07:56Z,usuario_demo_06,1,retiro,equipo_oficina,Zona Centro Ficticia,cambio_patron,0.44640252743487846,0.0,bajo,False,FN
+FG-DEMO-000741,442118,2026-10-28T23:42:59Z,usuario_demo_05,1,compra,mantenimiento,Zona Oriente Ficticia,monto_alto,0.6009637468810249,96.06741573033707,medio,False,FN
+FG-DEMO-000875,1664163,2026-10-29T17:45:54Z,usuario_demo_07,1,transferencia,papeleria,Zona Norte Ficticia,monto_alto,0.6098171153617391,96.62921348314607,medio,False,FN
+FG-DEMO-000357,25800,2026-10-29T19:19:26Z,usuario_demo_03,1,retiro,abarrotes,Zona Sur Ficticia,cambio_patron,0.4693074976732355,22.471910112359552,bajo,False,FN

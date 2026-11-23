@@ -1,0 +1,38 @@
+# Entornos y secretos locales
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+
+# Frontend
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Datos y modelos generados
+*.db
+*.sqlite
+*.sqlite3
+*.db-*
+*.sqlite-*
+*.sqlite3-*
+*.joblib
+datasets/generated/
+backend/artifacts/
+
+# Sistema/editor y comprobaciones locales
+.DS_Store
+Thumbs.db
+.idea/
+.verification/
+*.log

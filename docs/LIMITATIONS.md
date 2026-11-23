@@ -1,0 +1,13 @@
+# Límites y riesgos conocidos
+
+- **Modelo experimental:** el bosque recuperó 1/10 atípicos en el ejemplo etiquetado disponible. No está validado para decisiones financieras, bloqueo de operaciones ni detección de fraude. La puntuación 0–100 es un percentil, nunca probabilidad.
+- **Evaluación pequeña y exploratoria:** 30 filas sintéticas, etiquetas ligadas al monto, ejemplos inspeccionados durante desarrollo, sin intervalos ni validación externa. La línea base obtiene mejor resultado en ese ejemplo. Ver EVALUATION.md.
+- **Variables limitadas:** monto, hora y día UTC; sin contexto comercial, frecuencia causal, comportamiento histórico ni explicación causal. UTC pierde contexto local. Datos ausentes se rechazan; no hay imputación aprendida.
+- **Referencia y deriva:** percentiles discretos, dependientes de una referencia potencialmente contaminada. No hay monitoreo de deriva ni recalibración automática. Inferencia no aprende ni se adapta al lote.
+- **Uso local:** sin autenticación, autorización ni rate limiting. CORS no es autenticación. Solo loopback y un worker; no exponer directamente a Internet. Nunca cargar joblib de origen desconocido.
+- **Persistencia:** SQLite, creación de tablas sin migraciones versionadas, sin backups automáticos ni historial completo de reanálisis. La última inferencia reemplaza el resultado anterior por transacción; entrenar no recalcula resultados previos. Importar de nuevo crea otro lote.
+- **Escala:** resumen en memoria, listado de lotes completo, tareas ML síncronas con lock en un proceso. Sin colas, procesamiento distribuido, cancelación del entrenamiento tras desconexión o garantías de rendimiento bajo carga. No se ejecutaron pruebas de estrés.
+- **Contrato monetario:** una sola moneda por dataset, MXN para demo; sin conversiones. Importes individuales en centavos enteros; agregados como cadenas de centavos para evitar pérdida de precisión JavaScript. Reiniciar backend y recargar frontend juntos al actualizar este contrato.
+- **CSV:** formato estricto UTF-8/coma, tamaño y filas acotados. No acepta Excel, encabezados localizados ni todas las variantes de CSV. No se conserva el original y la previsualización es posterior al guardado, no una confirmación previa.
+- **Interfaz:** filtros no persisten en URL/localStorage. KPI/gráficas son del lote completo; búsqueda y nivel solo filtran la tabla. La prueba visual no equivale a certificación WCAG ni a compatibilidad con todos los navegadores.
+- **Auditoría acotada:** pruebas funcionales, contratos y revisión de código; no pentest, certificación bancaria, auditoría independiente exhaustiva de dependencias ni garantía de ausencia de errores. Versiones verificadas en Windows/Python 3.12/Node 24; otros entornos no comprobados.

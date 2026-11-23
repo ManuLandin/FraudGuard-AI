@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "health",
+    "openapi-response-contracts",
+    "empty-malformed-oversized-csv-no-persistence",
+    "upload-train-analyze-dashboard-cors",
+    "filters-pagination-detail-integer-bounds",
+    "persistence-after-real-process-restart"
+  ],
+  "isolation": "temporary SQLite and model; real loopback HTTP"
+}
